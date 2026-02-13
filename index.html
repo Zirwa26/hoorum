@@ -388,13 +388,14 @@
     noBtn.addEventListener("click", e => e.preventDefault());
 
     /* ---------- YES CLICK ---------- */
-    yesBtn.addEventListener("click", () => {
-      zone.style.display = "none";
-      hint.style.display = "none";
-      result.style.display = "block";
-      resizeConfettiCanvas();
-      fullScreenConfetti();
-    });
+   yesBtn.addEventListener("click", () => {
+  zone.style.display = "none";
+  hint.style.display = "none";
+  document.querySelector("h1").style.display = "none";
+  result.style.display = "block";
+  resizeConfettiCanvas();
+  fullScreenConfetti();
+});
   </script>
 </body>
 </html>
