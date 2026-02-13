@@ -268,7 +268,8 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>HOOR will you be my valentine?</h1>
+    <h1 id="mainQuestion">HOOR will you be my valentine?</h1>
+
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">Yes</button>
@@ -276,7 +277,7 @@
     </section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">"No" seems a bit shy 😈</div>
+    <div class="hint" id="hint">"No" seems a bit shy 😏</div>
 
     <section class="result" id="result">
       <div class="love-message">I LOVE YOU! 💖</div>
@@ -391,11 +392,12 @@
    yesBtn.addEventListener("click", () => {
   zone.style.display = "none";
   hint.style.display = "none";
-  document.querySelector("h1").style.display = "none";
+  document.getElementById("mainQuestion").style.display = "none";
   result.style.display = "block";
   resizeConfettiCanvas();
   fullScreenConfetti();
 });
+
   </script>
 </body>
 </html>
